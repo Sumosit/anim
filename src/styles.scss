@@ -1,0 +1,117 @@
+body {
+  color: #1E2230;
+}
+
+html {
+  overflow-y: initial;
+  -ms-overflow-y: initial;
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+* {
+  overflow-y: hidden;
+  -ms-overflow-y: hidden;
+  overflow-x: hidden;
+  -ms-overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-style: normal;
+  font-family: "Open Sans", "sans-serif" !important;
+  transition: all 0.15s ease 0s;
+  -webkit-transition: all 0.15s ease 0s;
+  -o-transition: all 0.15s ease 0s;
+  -moz-transition: all 0.15s ease 0s;
+}
+
+.middle-content {
+  position: relative;
+  overflow: initial;
+  max-width: calc(1184px + 64px);
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: 500px) {
+    max-width: initial;
+    width: 100%;
+  }
+}
+
+.middle-padding {
+  padding-left: 32px !important;
+  padding-right: 32px !important;
+  @media screen and (max-width: 1024px) {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+.button-primary {
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+  z-index: 1001;
+  //width: fit-content;
+  flex: none;
+  -ms-flex: none;
+  -webkit-flex: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  background: #13AB53;
+  @media screen and (max-width: 390px) {
+    padding: 12px 20px;
+  }
+}
+
+.accent-color {
+  font-weight: 600 !important;
+  color: #13AB53 !important;
+}
+
+.button-disabled {
+  opacity: 0.5 !important;
+  -moz-opacity: 0.5 !important;
+}
+
+html {
+  //scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(white, 0.9);
+}
+
+@import "assets/scss/header.scss";
+@import "assets/scss/animation.scss";
+@import "assets/scss/animation-mobile.scss";
+@import "assets/scss/animation-change-theme.scss";
+@import "assets/scss/rates.scss";
+@import "assets/scss/trial-form.scss";
+@import "assets/scss/copyright.scss";
+
+@import "assets/scss/mobile-menu.scss";
